@@ -1,6 +1,6 @@
 /* ==========================================================
    BOTW Digital Program
-   Version 0.1
+   Version 0.2
    ----------------------------------------------------------
    United States Air Force Band of the West
 ========================================================== */
@@ -167,17 +167,13 @@ body {
 
     border-bottom: 1px solid var(--divider);
 
-}
-
-.sticky-nav {
-
     display: flex;
 
     justify-content: center;
 
     gap: 48px;
 
-    padding: 18px 20px;
+    padding: 12px 20px;
 
 }
 
@@ -232,7 +228,7 @@ h2 {
 
     padding-bottom: 8px;
 
-    border-bottom: 2px solid var(--af-blue);
+    border-bottom: 1px solid var(--af-blue);
 
 }
 
@@ -241,6 +237,69 @@ h2 {
     color: var(--text-light);
 
     font-style: italic;
+
+}
+
+
+/* ==========================================================
+   PROGRAM
+========================================================== */
+
+.program-piece {
+
+    margin-bottom: 2.5rem;
+
+}
+
+.program-piece h3 {
+
+    font-size: 1.8rem;
+
+    font-weight: 600;
+
+    margin-bottom: 2px;
+
+}
+
+.composer {
+
+    font-size: 1.15rem;
+
+}
+
+.arranger {
+
+    font-size: 1rem;
+
+    color: var(--text-light);
+
+}
+
+.premiere {
+
+    color: var(--af-blue);
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 6px;
+
+}
+
+.encore-label {
+
+    color: var(--af-blue);
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 6px;
 
 }
 
@@ -292,13 +351,25 @@ footer {
 
         gap: 22px;
 
-        padding: 16px;
+        padding: 10px 16px;
 
     }
 
     h2 {
 
         font-size: 1.6rem;
+
+    }
+
+    .program-piece h3 {
+
+        font-size: 1.45rem;
+
+    }
+
+    .composer {
+
+        font-size: 1.05rem;
 
     }
 
