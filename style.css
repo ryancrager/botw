@@ -1,0 +1,208 @@
+/* --------------------------------------------------
+   USAF Band of the West Digital Program
+   Version 0.1
+-------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    background: #ffffff;
+    color: #111111;
+
+    line-height: 1.6;
+
+}
+
+/* ----------------------------- */
+/* Masthead                      */
+/* ----------------------------- */
+
+.masthead {
+
+    background: #00308F;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+}
+
+.logo-container img {
+
+    width: 220px;
+    max-width: 80%;
+
+    display: block;
+
+    margin: 0 auto 24px auto;
+
+}
+
+.event-info h1 {
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+
+}
+
+.event-info p {
+
+    font-size: 1rem;
+
+    opacity: .95;
+
+}
+
+/* ----------------------------- */
+/* Navigation                    */
+/* ----------------------------- */
+
+.sticky-nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: white;
+
+    border-bottom: 1px solid #d9d9d9;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 36px;
+
+    padding: 14px;
+
+}
+
+.sticky-nav a {
+
+    color: #00308F;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 1rem;
+
+}
+
+.sticky-nav a:hover {
+
+    color: #002B80;
+
+}
+
+/* ----------------------------- */
+/* Hero                          */
+/* ----------------------------- */
+
+.hero {
+
+    padding: 24px;
+
+}
+
+.hero img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 10px;
+
+}
+
+/* ----------------------------- */
+/* Main Content                  */
+/* ----------------------------- */
+
+main {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 24px;
+
+}
+
+section {
+
+    margin-bottom: 60px;
+
+}
+
+h2 {
+
+    color: #00308F;
+
+    font-size: 1.8rem;
+
+    font-weight: 600;
+
+    margin-bottom: 16px;
+
+    border-bottom: 2px solid #00308F;
+
+    padding-bottom: 6px;
+
+}
+
+.placeholder {
+
+    color: #666666;
+
+    font-style: italic;
+
+}
+
+/* ----------------------------- */
+/* Mobile                        */
+/* ----------------------------- */
+
+@media (max-width: 600px) {
+
+    .event-info h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+    .sticky-nav {
+
+        gap: 20px;
+
+    }
+
+    h2 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
