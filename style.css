@@ -416,7 +416,6 @@ footer {
 .bio-card summary {
 
     list-style: none;
-
     cursor: pointer;
 
 }
@@ -427,7 +426,13 @@ footer {
 
 }
 
-.bio-card h3 {
+.bio-summary {
+
+    text-align: center;
+
+}
+
+.bio-summary h3 {
 
     color: var(--af-blue);
 
@@ -437,34 +442,20 @@ footer {
 
 }
 
-.bio-card summary p {
+.bio-summary p {
 
     color: var(--text-light);
 
-}
-
-.bio-content {
-
-    margin-top: 24px;
+    margin-bottom: 10px;
 
 }
 
-.bio-content img {
-
-    width: 100%;
-
-    max-width: 260px;
-
-    border-radius: 12px;
+.bio-arrow {
 
     display: block;
 
-    margin-bottom: 24px;
+    font-size: 1.2rem;
 
-}
-
-.bio-content p {
-
-    margin-bottom: 18px;
+    color: var(--af-blue);
 
 }
