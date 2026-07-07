@@ -1,7 +1,12 @@
-/* --------------------------------------------------
-   USAF Band of the West Digital Program
+/* ==========================================================
+   BOTW Digital Program
    Version 0.1
--------------------------------------------------- */
+   ----------------------------------------------------------
+   United States Air Force Band of the West
+========================================================== */
+
+
+/* ---------- Reset ---------- */
 
 * {
     margin: 0;
@@ -9,8 +14,30 @@
     box-sizing: border-box;
 }
 
+
+/* ---------- Root ---------- */
+
+:root {
+
+    --af-blue: #00308F;
+    --af-blue-dark: #002B80;
+
+    --text: #111111;
+    --text-light: #666666;
+
+    --divider: #D8D8D8;
+
+    --page-width: 900px;
+
+}
+
+
+/* ---------- Base ---------- */
+
 html {
+
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -21,109 +48,93 @@ body {
         Arial,
         sans-serif;
 
-    background: #ffffff;
-    color: #111111;
+    color: var(--text);
+
+    background: white;
 
     line-height: 1.6;
 
 }
 
-/* ----------------------------- */
-/* Masthead                      */
-/* ----------------------------- */
+
+/* ==========================================================
+   HEADER
+========================================================== */
 
 .masthead {
 
-    background: #00308F;
+    background: var(--af-blue);
 
     color: white;
 
-    text-align: center;
+}
 
-    padding: 28px 20px;
+.masthead-content {
+
+    max-width: var(--page-width);
+
+    margin: auto;
+
+    padding: 40px 24px;
+
+    text-align: center;
 
 }
 
-.logo-container img {
+.logo {
 
-    width: 220px;
-    max-width: 80%;
+    width: min(700px, 90%);
 
     display: block;
 
-    margin: 0 auto 24px auto;
+    margin: auto;
 
 }
 
-.event-info h1 {
+.event {
 
-    font-size: 2rem;
+    margin-top: 30px;
+
+}
+
+.event h1 {
+
+    font-size: clamp(2rem, 4vw, 2.8rem);
 
     font-weight: 600;
 
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 
 }
 
-.event-info p {
+.date {
 
-    font-size: 1rem;
+    font-size: 1.15rem;
 
     opacity: .95;
 
 }
 
-/* ----------------------------- */
-/* Navigation                    */
-/* ----------------------------- */
-
-.sticky-nav {
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 1000;
-
-    background: white;
-
-    border-bottom: 1px solid #d9d9d9;
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 36px;
-
-    padding: 14px;
-
-}
-
-.sticky-nav a {
-
-    color: #00308F;
-
-    text-decoration: none;
-
-    font-weight: 600;
+.location {
 
     font-size: 1rem;
 
-}
-
-.sticky-nav a:hover {
-
-    color: #002B80;
+    opacity: .85;
 
 }
 
-/* ----------------------------- */
-/* Hero                          */
-/* ----------------------------- */
+
+/* ==========================================================
+   HERO
+========================================================== */
 
 .hero {
 
-    padding: 24px;
+    max-width: var(--page-width);
+
+    margin: 40px auto;
+
+    padding: 0 24px;
 
 }
 
@@ -133,75 +144,167 @@ body {
 
     display: block;
 
-    border-radius: 10px;
+    border-radius: 14px;
 
 }
 
-/* ----------------------------- */
-/* Main Content                  */
-/* ----------------------------- */
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.sticky-nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+    background: white;
+
+    border-top: 1px solid var(--divider);
+
+    border-bottom: 1px solid var(--divider);
+
+}
+
+.sticky-nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 48px;
+
+    padding: 18px 20px;
+
+}
+
+.sticky-nav a {
+
+    text-decoration: none;
+
+    color: var(--af-blue);
+
+    font-weight: 600;
+
+    transition: .2s;
+
+}
+
+.sticky-nav a:hover {
+
+    color: var(--af-blue-dark);
+
+}
+
+
+/* ==========================================================
+   MAIN
+========================================================== */
 
 main {
 
-    max-width: 900px;
+    max-width: var(--page-width);
 
     margin: auto;
 
-    padding: 24px;
+    padding: 50px 24px;
 
 }
 
 section {
 
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 
 }
 
 h2 {
 
-    color: #00308F;
+    color: var(--af-blue);
 
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     font-weight: 600;
 
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
-    border-bottom: 2px solid #00308F;
+    padding-bottom: 8px;
 
-    padding-bottom: 6px;
+    border-bottom: 2px solid var(--af-blue);
 
 }
 
 .placeholder {
 
-    color: #666666;
+    color: var(--text-light);
 
     font-style: italic;
 
 }
 
-/* ----------------------------- */
-/* Mobile                        */
-/* ----------------------------- */
 
-@media (max-width: 600px) {
+/* ==========================================================
+   FOOTER
+========================================================== */
 
-    .event-info h1 {
+footer {
 
-        font-size: 1.5rem;
+    border-top: 1px solid var(--divider);
+
+    color: var(--text-light);
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    font-size: .9rem;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:700px) {
+
+    .masthead-content {
+
+        padding: 28px 20px;
+
+    }
+
+    .event {
+
+        margin-top: 20px;
+
+    }
+
+    .event h1 {
+
+        font-size: 1.8rem;
 
     }
 
     .sticky-nav {
 
-        gap: 20px;
+        gap: 22px;
+
+        padding: 16px;
 
     }
 
     h2 {
 
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+
+    }
+
+    section {
+
+        margin-bottom: 60px;
 
     }
 
