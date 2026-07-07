@@ -459,3 +459,22 @@ footer {
     color: var(--af-blue);
 
 }
+
+
+/* ==========================================================
+   GUEST CONDUCTORS
+========================================================== */
+
+.guest-conductor { margin-top:12px; }
+.guest-conductor summary { list-style:none; cursor:pointer; color:var(--af-blue); }
+.guest-conductor summary::-webkit-details-marker { display:none; }
+.guest-conductor span {
+ display:block; font-size:.85rem; font-weight:700;
+ letter-spacing:.8px; text-transform:uppercase;
+}
+.guest-conductor strong {
+ display:block; font-size:1rem; font-weight:600;
+}
+.guest-conductor p {
+ color:var(--text-light); font-size:.95rem; margin-top:6px;
+}
