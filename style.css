@@ -380,3 +380,91 @@ footer {
     }
 
 }
+/* ==========================================================
+   ABOUT
+========================================================== */
+
+.about-band {
+
+    margin-bottom: 50px;
+
+}
+
+.about-band p {
+
+    margin-bottom: 20px;
+
+}
+
+
+/* ---------- Biography Cards ---------- */
+
+.bio-card {
+
+    border-top: 1px solid var(--divider);
+
+    padding: 18px 0;
+
+}
+
+.bio-card:last-child {
+
+    border-bottom: 1px solid var(--divider);
+
+}
+
+.bio-card summary {
+
+    list-style: none;
+
+    cursor: pointer;
+
+}
+
+.bio-card summary::-webkit-details-marker {
+
+    display: none;
+
+}
+
+.bio-card h3 {
+
+    color: var(--af-blue);
+
+    font-size: 1.35rem;
+
+    margin-bottom: 4px;
+
+}
+
+.bio-card summary p {
+
+    color: var(--text-light);
+
+}
+
+.bio-content {
+
+    margin-top: 24px;
+
+}
+
+.bio-content img {
+
+    width: 100%;
+
+    max-width: 260px;
+
+    border-radius: 12px;
+
+    display: block;
+
+    margin-bottom: 24px;
+
+}
+
+.bio-content p {
+
+    margin-bottom: 18px;
+
+}
