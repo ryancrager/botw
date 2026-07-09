@@ -248,3 +248,28 @@ footer { border-top:1px solid var(--divider); color:var(--text-light); text-alig
         font-size: .94rem;
     }
 }
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.site-hero {
+    background: #00308F;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+.site-hero img {
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .site-hero img {
+        min-height: 150px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
