@@ -1,550 +1,98 @@
 /* ==========================================================
    BOTW Digital Program
-   Version 0.2
-   ----------------------------------------------------------
+   Version 0.6 - Biographies
    United States Air Force Band of the West
 ========================================================== */
-
-
-/* ---------- Reset ---------- */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* ---------- Root ---------- */
-
+* { margin:0; padding:0; box-sizing:border-box; }
 :root {
-
-    --af-blue: #00308F;
-    --af-blue-dark: #002B80;
-
-    --text: #111111;
-    --text-light: #666666;
-
-    --divider: #D8D8D8;
-
-    --page-width: 900px;
-
+    --af-blue:#00308F;
+    --af-blue-dark:#002B80;
+    --text:#111111;
+    --text-light:#666666;
+    --divider:#D8D8D8;
+    --page-width:900px;
 }
-
-
-/* ---------- Base ---------- */
-
-html {
-
-    scroll-behavior: smooth;
-
-}
-
+html { scroll-behavior:smooth; }
 body {
-
-    font-family:
-        "Segoe UI",
-        Helvetica,
-        Arial,
-        sans-serif;
-
-    color: var(--text);
-
-    background: white;
-
-    line-height: 1.6;
-
+    font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
+    -webkit-text-size-adjust:100%;
 }
-
-
-/* ==========================================================
-   HEADER
-========================================================== */
-
-.masthead {
-
-    background: var(--af-blue);
-
-    color: white;
-
-}
-
-.masthead-content {
-
-    max-width: var(--page-width);
-
-    margin: auto;
-
-    padding: 40px 24px;
-
-    text-align: center;
-
-}
-
-.logo {
-
-    width: min(700px, 90%);
-
-    display: block;
-
-    margin: auto;
-
-}
-
-.event {
-
-    margin-top: 30px;
-
-}
-
-.event h1 {
-
-    font-size: clamp(2rem, 4vw, 2.8rem);
-
-    font-weight: 600;
-
-    margin-bottom: 14px;
-
-}
-
-.date {
-
-    font-size: 1.15rem;
-
-    opacity: .95;
-
-}
-
-.location {
-
-    font-size: 1rem;
-
-    opacity: .85;
-
-}
-
-
-/* ==========================================================
-   HERO
-========================================================== */
-
-.hero {
-
-    max-width: var(--page-width);
-
-    margin: 40px auto;
-
-    padding: 0 24px;
-
-}
-
-.hero img {
-
-    width: 100%;
-
-    display: block;
-
-    border-radius: 14px;
-
-}
-
-
-/* ==========================================================
-   NAVIGATION
-========================================================== */
-
+.masthead { background:var(--af-blue); color:#fff; }
+.masthead-content { max-width:var(--page-width); margin:auto; padding:40px 24px; text-align:center; }
+.logo { width:min(700px,90%); display:block; margin:auto; }
+.event { margin-top:30px; }
+.event h1 { font-size:clamp(2rem,4vw,2.8rem); font-weight:600; margin-bottom:14px; }
+.date { font-size:1.15rem; opacity:.95; }
+.location { font-size:1rem; opacity:.85; }
+.hero { max-width:var(--page-width); margin:40px auto; padding:0 24px; }
+.hero img { width:100%; display:block; border-radius:14px; }
 .sticky-nav {
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 999;
-
-    background: white;
-
-    border-top: 1px solid var(--divider);
-
-    border-bottom: 1px solid var(--divider);
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 48px;
-
-    padding: 12px 20px;
-
+    position:sticky; top:0; z-index:999; background:#fff;
+    border-top:1px solid var(--divider); border-bottom:1px solid var(--divider);
+    display:flex; justify-content:center; gap:48px; padding:12px 20px;
 }
-
-.sticky-nav a {
-
-    text-decoration: none;
-
-    color: var(--af-blue);
-
-    font-weight: 600;
-
-    transition: .2s;
-
-}
-
-.sticky-nav a:hover {
-
-    color: var(--af-blue-dark);
-
-}
-
-
-/* ==========================================================
-   MAIN
-========================================================== */
-
-main {
-
-    max-width: var(--page-width);
-
-    margin: auto;
-
-    padding: 50px 24px;
-
-}
-
-section {
-
-    margin-bottom: 80px;
-
-}
-
-h2 {
-
-    color: var(--af-blue);
-
-    font-size: 2rem;
-
-    font-weight: 600;
-
-    margin-bottom: 20px;
-
-    padding-bottom: 8px;
-
-    border-bottom: 1px solid var(--af-blue);
-
-}
-
-.placeholder {
-
-    color: var(--text-light);
-
-    font-style: italic;
-
-}
-
-
-/* ==========================================================
-   PROGRAM
-========================================================== */
-
-.program-piece {
-
-    margin-bottom: 2.5rem;
-
-}
-
-.program-piece h3 {
-
-    font-size: 1.8rem;
-
-    font-weight: 600;
-
-    margin-bottom: 2px;
-
-}
-
-.composer {
-
-    font-size: 1.15rem;
-
-}
-
-.arranger {
-
-    font-size: 1rem;
-
-    color: var(--text-light);
-
-}
-
-.premiere {
-
-    color: var(--af-blue);
-
-    font-size: .85rem;
-
-    font-weight: 700;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 6px;
-
-}
-
-.encore-label {
-
-    color: var(--af-blue);
-
-    font-size: .85rem;
-
-    font-weight: 700;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 6px;
-
-}
-
-
-/* ==========================================================
-   FOOTER
-========================================================== */
-
-footer {
-
-    border-top: 1px solid var(--divider);
-
-    color: var(--text-light);
-
-    text-align: center;
-
-    padding: 40px 20px;
-
-    font-size: .9rem;
-
-}
-
-
-/* ==========================================================
-   MOBILE
-========================================================== */
-
+.sticky-nav a { text-decoration:none; color:var(--af-blue); font-weight:600; transition:color .2s ease; }
+.sticky-nav a:hover, .sticky-nav a:focus-visible { color:var(--af-blue-dark); outline:none; text-decoration:underline; text-underline-offset:4px; }
+main { max-width:var(--page-width); margin:auto; padding:50px 24px; }
+section { margin-bottom:80px; }
+h2 { color:var(--af-blue); font-size:2rem; font-weight:600; margin-bottom:20px; padding-bottom:8px; border-bottom:1px solid var(--af-blue); }
+.placeholder { color:var(--text-light); font-style:italic; }
+.program-piece { margin-bottom:2.5rem; }
+.program-piece h3 { font-size:1.8rem; font-weight:600; margin-bottom:2px; line-height:1.25; }
+.composer { font-size:1.15rem; }
+.arranger { font-size:1rem; color:var(--text-light); }
+.premiere, .encore-label { color:var(--af-blue); font-size:.85rem; font-weight:700; letter-spacing:1px; margin-bottom:6px; }
+.about-band { margin-bottom:50px; }
+.about-band p { margin-bottom:20px; }
+.bio-card, .guest-bio, .personnel-group { border-top:1px solid var(--divider); }
+.bio-card { padding:18px 0; }
+.bio-card:last-of-type { border-bottom:1px solid var(--divider); }
+.bio-card summary, .guest-bio summary, .personnel-group summary { list-style:none; cursor:pointer; }
+.bio-card summary::-webkit-details-marker, .guest-bio summary::-webkit-details-marker, .personnel-group summary::-webkit-details-marker { display:none; }
+.bio-summary { text-align:center; transition:opacity .2s ease; }
+.bio-summary h3 { color:var(--af-blue); font-size:1.35rem; margin-bottom:4px; }
+.bio-summary p { color:var(--text-light); margin-bottom:8px; }
+.bio-action { display:block; color:var(--af-blue); font-size:.9rem; font-weight:600; margin-top:2px; }
+.bio-arrow { display:block; font-size:1.15rem; line-height:1; color:var(--af-blue); transition:transform .25s ease; }
+details[open] .bio-arrow { transform:rotate(180deg); }
+.details-content { overflow:hidden; }
+.bio-content { margin-top:24px; }
+.bio-content img { width:100%; max-width:260px; border-radius:12px; display:block; margin:0 auto 24px auto; }
+.bio-content p { margin-bottom:18px; }
+.bio-content h4 { color:var(--af-blue); font-size:1rem; margin:24px 0 8px; text-transform:uppercase; letter-spacing:.6px; }
+.guest-bio { margin-top:14px; padding-top:14px; }
+.guest-summary { transition:opacity .2s ease; }
+.guest-summary strong { display:block; color:var(--af-blue); font-size:1.05rem; font-weight:600; }
+.guest-title { display:block; color:var(--text-light); font-size:.98rem; margin-top:2px; }
+.guest-action { display:block; color:var(--af-blue); font-size:.9rem; font-weight:600; margin-top:6px; }
+.guest-bio-content { padding-bottom:4px; }
+.bio-card summary:hover .bio-summary, .guest-bio summary:hover .guest-summary, .personnel-group summary:hover { opacity:.78; }
+.personnel { margin-top:50px; }
+.personnel h3 { color:var(--af-blue); font-size:1.45rem; font-weight:600; margin-bottom:18px; }
+.personnel-group { padding:16px 0; }
+.personnel-group:last-child { border-bottom:1px solid var(--divider); }
+.personnel-group summary { color:var(--af-blue); font-size:1.15rem; font-weight:600; }
+.personnel-group summary::after { content:"▾"; float:right; color:var(--af-blue); transition:transform .25s ease; }
+.personnel-group[open] summary::after { transform:rotate(180deg); }
+.personnel-content { margin-top:22px; }
+.personnel-content h4 { color:var(--af-blue); font-size:1rem; font-weight:700; margin-top:24px; margin-bottom:6px; text-transform:uppercase; letter-spacing:.6px; }
+.personnel-content h4:first-child { margin-top:0; }
+.personnel-content p { margin-bottom:3px; }
+footer { border-top:1px solid var(--divider); color:var(--text-light); text-align:center; padding:40px 20px; font-size:.9rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; animation:none !important; } }
 @media (max-width:700px) {
-
-    .masthead-content {
-
-        padding: 28px 20px;
-
-    }
-
-    .event {
-
-        margin-top: 20px;
-
-    }
-
-    .event h1 {
-
-        font-size: 1.8rem;
-
-    }
-
-    .sticky-nav {
-
-        gap: 22px;
-
-        padding: 10px 16px;
-
-    }
-
-    h2 {
-
-        font-size: 1.6rem;
-
-    }
-
-    .program-piece h3 {
-
-        font-size: 1.45rem;
-
-    }
-
-    .composer {
-
-        font-size: 1.05rem;
-
-    }
-
-    section {
-
-        margin-bottom: 60px;
-
-    }
-
-}
-/* ==========================================================
-   ABOUT
-========================================================== */
-
-.about-band {
-
-    margin-bottom: 50px;
-
-}
-
-.about-band p {
-
-    margin-bottom: 20px;
-
-}
-
-
-/* ---------- Biography Cards ---------- */
-
-.bio-card {
-
-    border-top: 1px solid var(--divider);
-
-    padding: 18px 0;
-
-}
-
-.bio-card:last-child {
-
-    border-bottom: 1px solid var(--divider);
-
-}
-
-.bio-card summary {
-
-    list-style: none;
-    cursor: pointer;
-
-}
-
-.bio-card summary::-webkit-details-marker {
-
-    display: none;
-
-}
-
-.bio-summary {
-
-    text-align: center;
-
-}
-
-.bio-summary h3 {
-
-    color: var(--af-blue);
-
-    font-size: 1.35rem;
-
-    margin-bottom: 4px;
-
-}
-
-.bio-summary p {
-
-    color: var(--text-light);
-
-    margin-bottom: 10px;
-
-}
-
-.bio-arrow {
-
-    display: block;
-
-    font-size: 1.2rem;
-
-    color: var(--af-blue);
-
-}
-
-
-/* ==========================================================
-   GUEST CONDUCTORS
-========================================================== */
-
-.guest-conductor { margin-top:12px; }
-.guest-conductor summary { list-style:none; cursor:pointer; color:var(--af-blue); }
-.guest-conductor summary::-webkit-details-marker { display:none; }
-.guest-conductor span {
- display:block; font-size:.85rem; font-weight:700;
- letter-spacing:.8px; text-transform:uppercase;
-}
-.guest-conductor strong {
- display:block; font-size:1rem; font-weight:600;
-}
-.guest-conductor p {
- color:var(--text-light); font-size:.95rem; margin-top:6px;
-}
-
-
-/* ==========================================================
-   PERSONNEL
-========================================================== */
-
-.personnel {
-    margin-top: 50px;
-}
-
-.personnel h3 {
-    color: var(--af-blue);
-    font-size: 1.45rem;
-    font-weight: 600;
-    margin-bottom: 18px;
-}
-
-.personnel-group {
-    border-top: 1px solid var(--divider);
-    padding: 16px 0;
-}
-
-.personnel-group:last-child {
-    border-bottom: 1px solid var(--divider);
-}
-
-.personnel-group summary {
-    list-style: none;
-    cursor: pointer;
-    color: var(--af-blue);
-    font-size: 1.15rem;
-    font-weight: 600;
-}
-
-.personnel-group summary::-webkit-details-marker {
-    display: none;
-}
-
-.personnel-group summary::after {
-    content: "▾";
-    float: right;
-    color: var(--af-blue);
-    transition: transform .2s ease;
-}
-
-.personnel-group[open] summary::after {
-    transform: rotate(180deg);
-}
-
-.personnel-content {
-    margin-top: 22px;
-}
-
-.personnel-content h4 {
-    color: var(--af-blue);
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 24px;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: .6px;
-}
-
-.personnel-content h4:first-child {
-    margin-top: 0;
-}
-
-.personnel-content p {
-    margin-bottom: 3px;
+    .masthead-content { padding:28px 20px; }
+    .event { margin-top:20px; }
+    .event h1 { font-size:1.8rem; }
+    .sticky-nav { gap:22px; padding:10px 16px; }
+    main { padding:42px 22px; }
+    h2 { font-size:1.6rem; }
+    .program-piece h3 { font-size:1.45rem; }
+    .composer { font-size:1.05rem; }
+    .bio-summary h3 { font-size:1.2rem; }
+    .bio-content img { max-width:230px; }
+    section { margin-bottom:60px; }
 }
