@@ -40,14 +40,15 @@ main { max-width:var(--page-width); margin:auto; padding:50px 24px; }
 section { margin-bottom:80px; }
 h2 { color:var(--af-blue); font-size:2rem; font-weight:600; margin-bottom:20px; padding-bottom:8px; border-bottom:1px solid var(--af-blue); }
 .placeholder { color:var(--text-light); font-style:italic; }
-.program-piece { margin-bottom:2.5rem; }
+.program-piece { margin-bottom:2.5rem; padding-bottom:1.8rem; }
+.program-piece:not(:last-child) { border-bottom:1px solid var(--divider); }
 .program-piece h3 { font-size:1.8rem; font-weight:600; margin-bottom:2px; line-height:1.25; }
 .composer { font-size:1.15rem; }
 .arranger { font-size:1rem; color:var(--text-light); }
 .premiere, .encore-label { color:var(--af-blue); font-size:.85rem; font-weight:700; letter-spacing:1px; margin-bottom:6px; }
 .about-band { margin-bottom:50px; }
 .about-band p { margin-bottom:20px; }
-.bio-card, .guest-bio, .personnel-group { border-top:1px solid var(--divider); }
+.bio-card, .personnel-group { border-top:1px solid var(--divider); }
 .bio-card { padding:18px 0; }
 .bio-card:last-of-type { border-bottom:1px solid var(--divider); }
 .bio-card summary, .guest-bio summary, .personnel-group summary { list-style:none; cursor:pointer; }
@@ -63,7 +64,7 @@ details[open] .bio-arrow { transform:rotate(180deg); }
 .bio-content img { width:100%; max-width:260px; border-radius:12px; display:block; margin:0 auto 24px auto; }
 .bio-content p { margin-bottom:18px; }
 .bio-content h4 { color:var(--af-blue); font-size:1rem; margin:24px 0 8px; text-transform:uppercase; letter-spacing:.6px; }
-.guest-bio { margin-top:14px; padding-top:14px; }
+.guest-bio { margin-top:10px; padding-top:0; }
 .guest-summary { transition:opacity .2s ease; }
 .guest-summary strong { display:block; color:var(--af-blue); font-size:1.05rem; font-weight:600; }
 .guest-title { display:block; color:var(--text-light); font-size:.98rem; margin-top:2px; }
