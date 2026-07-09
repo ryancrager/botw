@@ -97,3 +97,154 @@ footer { border-top:1px solid var(--divider); color:var(--text-light); text-alig
     .bio-content img { max-width:230px; }
     section { margin-bottom:60px; }
 }
+
+
+/* ==========================================================
+   WORKSHOPS
+========================================================== */
+
+.workshops {
+    display: grid;
+    gap: 48px;
+}
+
+.workshop-card {
+    border-top: 1px solid var(--divider);
+    padding-top: 24px;
+}
+
+.workshop-card h3 {
+    color: var(--af-blue);
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 12px 0 26px;
+}
+
+.workshop-ensemble {
+    font-weight: 600;
+}
+
+.workshop-meta {
+    color: var(--text-light);
+    font-size: .98rem;
+    margin-top: 2px;
+}
+
+.workshop-program {
+    display: grid;
+    gap: 24px;
+}
+
+.workshop-piece h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 2px;
+}
+
+.workshop-piece h4 span {
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.workshop-piece p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+@media (max-width:700px) {
+
+    .workshops {
+        gap: 42px;
+    }
+
+    .workshop-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .workshop-piece h4 {
+        font-size: 1.12rem;
+    }
+
+}
+
+
+/* ==========================================================
+   GUEST BIOGRAPHIES
+========================================================== */
+
+.guest-bio {
+    margin-top: 12px;
+    padding-top: 0;
+}
+
+.guest-bio summary {
+    list-style: none;
+    cursor: pointer;
+    color: var(--af-blue);
+    display: inline-block;
+}
+
+.guest-bio summary::-webkit-details-marker {
+    display: none;
+}
+
+.guest-name {
+    display: block;
+    color: var(--af-blue);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.guest-title {
+    display: block;
+    color: var(--text-light);
+    font-size: .98rem;
+    line-height: 1.35;
+    margin-top: 2px;
+}
+
+.bio-toggle {
+    display: inline-block;
+    color: var(--af-blue);
+    font-size: .88rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.bio-toggle::before {
+    content: "▾ ";
+}
+
+.guest-bio[open] .bio-toggle::before {
+    content: "▴ ";
+}
+
+.guest-bio-content {
+    margin-top: 20px;
+}
+
+.guest-bio-content img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.guest-bio-content p {
+    margin-bottom: 18px;
+}
+
+@media (max-width:700px) {
+    .guest-name {
+        font-size: 1rem;
+    }
+
+    .guest-title {
+        font-size: .94rem;
+    }
+}
