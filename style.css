@@ -36,6 +36,10 @@ body {
    HEADER / COMBINED GRAPHICS
 ========================================================== */
 
+/* ==========================================================
+   HEADER / COMBINED GRAPHICS
+========================================================== */
+
 .masthead {
     background: var(--af-blue);
     color: #ffffff;
@@ -53,25 +57,23 @@ body {
     align-items: center;
     justify-content: center;
     gap: 18px;
-    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
-.logo,
-.masthead-hero {
+.logo {
     display: block;
-    height: auto;
+    width: auto;
+    height: 150px;
     object-fit: contain;
 }
 
-/* BOTW gets more room because its lettering/detail is finer. */
-.logo {
-    width: 60%;
-}
-
-/* Steel Resolve remains readable at a smaller width. */
 .masthead-hero {
-    width: 40%;
-    border-radius: 10px;
+    display: block;
+    width: auto;
+    height: 115px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .event {
