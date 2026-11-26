@@ -1,6 +1,6 @@
 /* ==========================================================
    BOTW Digital Program
-   Steel Resolve
+   Holiday in Blue 2026
    United States Air Force Band of the West
 ========================================================== */
 
@@ -68,13 +68,7 @@ body {
     object-fit: contain;
 }
 
-.masthead-hero {
-    display: block;
-    width: auto;
-    height: 115px;
-    object-fit: contain;
-    border-radius: 8px;
-}
+.masthead-hero { display: block; width: 100%; height: auto; border-radius: 0; object-fit: contain; }
 
 .event {
     margin-top: 18px;
@@ -464,10 +458,7 @@ footer {
         width: 60%;
     }
 
-    .masthead-hero {
-        width: 40%;
-        border-radius: 6px;
-    }
+
 
     .event {
         margin-top: 14px;
